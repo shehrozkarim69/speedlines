@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <canvas id="speedlineCanvas"></canvas>
+    <div id="controls">
+        <h2>Speedline Controls</h2>
+        <label>
+            Type:
+            <select id="type">
+                <option value="linear">Linear</option>
+                <option value="radial">Radial</option>
+            </select>
+        </label>
+        <label>
+            Count: <input type="number" id="count" value="100" onInput="updateSettings();">
+        </label>
+        <label>
+            Speed: <input type="number" id="speed" value="5">
+        </label>
+        <label>
+            Length: <input type="number" id="length" value="500">
+        </label>
+        <label>
+            Color: <input type="color" id="color" value="#ffffff">
+        </label>
+        <label>
+            Initial Size: <input type="number" id="initialSize" value="1">
+        </label>
+      <label>
+            Middle Size: <input type="number" id="middleSize" value="1">
+        </label>
+        <label>
+            End Size: <input type="number" id="endSize" value="5">
+        </label>
+        <label>
+            Emitter Radius: <input type="number" id="emitterRadius" value="250">
+        </label>
+        <label>
+            angle: <input type="number" id="angle" value="45" min="0" max="360">
+        </label>
+        <label>
+            Emitter X: <input type="number" id="emitterX" value="50" min="0" max="100" step="1">
+        </label>
+        <label>
+            Emitter Y: <input type="number" id="emitterY" value="50" min="0" max="100" step="1">
+        </label>
+    </div>
+    <div id="currentSettings"></div>
+
+   
+</body>
+<script src="./js/logic.js"></script>
+</html>

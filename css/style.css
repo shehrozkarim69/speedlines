@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+#speedlineCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+#controls label {
+    display: block;
+    margin-top: 5px;
+}
+#currentSettings {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+input {
+display: flex;
+}
